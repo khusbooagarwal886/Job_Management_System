@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Job Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#post-job">Post a Job</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="jobs">
+      <h2>Available Jobs</h2>
+      <div class="job-list">
+        <!-- Jobs will be dynamically loaded here using JavaScript -->
+      </div>
+    </section>
+
+    <section id="post-job">
+      <h2>Post a Job</h2>
+      <form id="post-job-form">
+        <div>
+          <label for="job-title">Job Title:</label>
+          <input type="text" id="job-title" required>
+        </div>
+        <div>
+          <label for="job-description">Job Description:</label>
+          <textarea id="job-description" required></textarea>
+        </div>
+        <div>
+          <label for="job-location">Job Location:</label>
+          <input type="text" id="job-location" required>
+        </div>
+        <button type="submit">Post Job</button>
+      </form>
+    </section>
+
+    <section id="profile">
+      <h2>User Profile</h2>
+      <div>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john@example.com</p>
+        <!-- Additional profile information can be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Job Management System</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
